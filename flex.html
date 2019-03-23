@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>flex box</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Style the body */
+	body {
+	  font-family: Arial;
+	  margin: 0;
+	}
+
+	/* Header/logo Title */
+	.header {
+	  padding: 1px;
+	  text-align: center;
+	  background: #FF7800;
+	  color: white;
+	}
+	/* logo images */
+	.logo{
+		align: left;
+		padding:  14px 20px;
+		height: 20px;
+		width: 40px;
+	}
+
+	/* Style the top navigation bar */
+	.navbar {
+	  display: flex;
+	  justify-content: flex-end;
+	  background-color: #6C4138;
+	}
+	
+	/* Style the navigation bar links */
+	.navbar a {
+	  color: white;
+	  padding: 14px 20px;
+	  text-decoration: none;
+	  text-align: center;
+	}
+
+	/* Change color on hover */
+	.navbar a:hover {
+	  background-color: #F7A768;
+	  color: black;
+	}
+
+	/* Column container */
+	.row {  
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+
+	/*left column */
+	.side {
+	  display: flex;
+	  
+	  flex-direction: column;
+	  flex: 5px;
+	  text-align: center;
+	  line-height: 30px;
+	  height:35em;
+	  color: white;
+	  background-color: #8E7A76;
+	  padding:  14px 20px;
+	}
+	.side a:hover {
+	  background-color: #F7A768;
+	  color: black;
+	}
+
+	/* Main column */
+	.main {
+	  flex: 70%;
+	  background-color: white;
+	  padding: 20px;
+	}
+
+	/* image for example */
+	.img {
+	  background-color: #32064A;
+	  text-align: center;
+	  width: 100%;
+	  padding: 20px;
+	}
+
+	/* Footer */
+	.footer {
+	  padding: 10px;
+	  width:100%;
+	  color: white;
+	  text-align: center;
+	  background: #6C4138;
+	}
+	.column {
+		  float: left;
+		  width: 20%;
+		  padding: 0;
+		}
+	.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+
+	/* media query screen size=700px */
+	@media screen and (max-width: 700px) {
+	  .row, .navbar {   
+		flex-direction: column;
+	  }
+	  h1 {
+		  text-shadow: 0 0 3px #FF0000;
+		}
+	}
+</style>
+</head>
+<body>
+<!-- Header -->
+	
+	<!-- Top -->
+	<div style="background:#32064A;padding:5px;color:white">
+		<marquee>
+			<h3>
+				<a href = "E:\on map\html\Bootstrap\New folder\emp.html">Urgent Requirement</a>
+				Updates / requirements / vaciencies / News
+			</h3>
+		</marquee>
+	</div>
+
+<!-- Navigation Bar -->
+	<div class="navbar">
+	  
+	  <a href="E:\on map\html\Bootstrap\New folder\outward.html">Outward</a>
+	  <a href="E:\on map\html\Bootstrap\New folder\inverd.html">Inverd</a>
+	  <a href="E:\on map\html\Bootstrap\New folder\#">Implementation</a>
+	  <a href="E:\on map\html\Bootstrap\New folder\emp.html">Emp_Registration</a>
+	  <a href="E:\on map\html\Bootstrap\New folder\flex.html">Flex-Box</a>
+	</div>
+<!-- body -->
+	<div class="row">
+	  <div class="side">
+		<h2>Menu</h2>
+			<a href = "E:\on map\html\Bootstrap\New folder\outward.html">Outward Form </a>
+			<a href = "E:\on map\html\Bootstrap\New folder\inverd.html">Inverd Form </a>
+			<a href = "E:\on map\html\Bootstrap\New folder\#">Implementation </a>
+			<a href = "E:\on map\html\Bootstrap\New folder\emp.html">Emp_Registration </a>
+			<a href = "E:\on map\html\Bootstrap\New folder\flex.html">Flex-Box</a>
+	  </div>
+	  
+	 
+
+  <div class="main">
+    <h2>Transaction and transformation</h2>
+		<div class="row">
+		  <div class="column">
+		 
+			<img src="D:\ps\pokemon images\Pikachu.png" alt="Pikachu" style="width:200px; height:200px;">
+		  </div>
+		  <div class="column">
+			<img src="D:\ps\pokemon images\pokemon-go-clipart-png-722672-2916280.png" alt="forest" style="width:200px; height:200px;">
+		  </div>
+		  <div class="column">
+			<img src="D:\ps\pokemon images\ZTGb.gif" alt="water" style="width:200px; height:200px;">
+		  </div>
+		   <div class="column">
+			<img src="D:\ps\pokemon images\images.png" alt="fire" style="width:200px; height:200px;">
+		  </div>
+		  <div class="column">
+			<img src="D:\ps\pokemon images\Anime-Pokemon-PNG-Free-Download.png" alt="fire" style="width:200px; height:200px;">
+		  </div>
+		</div>
+
+	</div>
+<!-- Footer -->
+	<div class="footer">
+	  <h2>Designed By: On Map Technologies</h2>
+	</div>
+
+</body>
+</html>
