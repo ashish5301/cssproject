@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>index structure</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Style the body */
+		body {
+			  font-family: Arial;
+			  margin: 0;
+		}
+
+		/* Header/logo Title */
+		.header {
+				  padding: 1px;
+				  text-align: center;
+				  background: black;
+				  color: white;
+		}
+		
+		/* Main column */
+		.main {
+				  flex: 100%;
+				  background-color: white;
+				  padding: 20px;
+		}
+		/* Footer */
+		.footer {
+				 padding: 1px;
+				 text-align: center;
+				 background: black;
+				 color: white;
+	}
+	/* media query screen size=700px */
+	@media screen and (max-width: 700px) {
+	  .row, .main {   
+		flex-direction: column;
+	  }
+	</style>
+	</head>
+	<body>
+	<!-- Header -->
+		<div class = "header">
+			<h2> Name and logo</h2>
+		</div>
+	<!-- Main Body -->
+	<div class = "main">
+		<table border="1" width="90%" align = "center">
+			<tr>
+				<td colspan = "6" align= "center">Tax Invoice</td>
+			</tr>
+			<tr>
+				<td rowspan = "2">Name Of Party:</td>
+				<td rowspan = "2" colspan = "2"></td>
+				<td>Invoice No:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>Invoice Date:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>GST No:</td>
+				<td colspan = "2"></td>
+				<td >Vehical No:</td>
+				<td colspan = "3"></td>
+			</tr>
+
+			<tr>
+				<th>S.No</th>
+				<th>Service Description</th>
+				<th>HSN/SAC</th>
+				<th>QTY</th>
+				<th>Unit (Rs.)</th>
+				<th>Net Amount</th>
+			</tr>
+			<tr>
+				<td colspan = "1">1</td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				
+			</tr>
+			<tr>
+				<td colspan = "1">2</td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+			</tr>
+			<tr>
+				<td colspan = "1">3</td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+			</tr>
+			<tr>
+				<td colspan = "1">4</td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+				<td colspan = "1"></td>
+			</tr>
+			<tr>
+				<td colspan = "3"></td>
+				<td colspan = "2">Net Total:</td>
+				<td></td>
+			</tr>
+			<tr colspan = "3">
+				<td colspan = "3" align = "center">Total Invoice In Words</td>
+				<td colspan = "2">Add: CGST @ 9%:</td>
+				<td colspan = "1"></td>
+			</tr>
+			<tr>
+				<td  rowspan = "3" colspan = "3"></td>
+				<td colspan = "2">Add: SGST @ 9%:</td>
+				<td colspan = "1"></td>
+			</tr>
+			<tr>
+				<td colspan = "2">Add: IGST @ 18%:</td>
+				<td colspan = "1"></td>
+			</tr>
+			<tr>
+				<td colspan = "2">grand Total:</td>
+				<td colspan = "1"></td>
+			</tr>
+			<tr>
+				<td>Pan No:</td>
+				<td colspan = "2"></td>
+				<td rowspan = "10"colspan = "3" align = "Center">Certified that the particular given above are true and correct</td>
+			</tr>
+			<tr>
+				<td>GSTIN/UIN:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>Bank Details:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>Account No:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>Account Type:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>Bank:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>Branch:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>IFSC:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>Terms & Conditions:</td>
+				<td colspan = "2"></td>
+			</tr>
+			<tr>
+				<td>Mode/Terms Of Payment:</td>
+				<td colspan = "2"></td>
+			</tr>
+		</table>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+	  <h2>Designed & Developed By: On Map Technologies</h2>
+	</div>
+		
+	</body>
+</html>

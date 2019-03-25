@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;">
+   <style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Style the body */
+	body {
+	  font-family: Arial;
+	  margin: 0;
+	}
+
+	/* Header/logo Title */
+	.header {
+	  padding: 1px;
+	  text-align: center;
+	  background: black;
+	  color: white;
+	}
+	
+	/* Main column */
+	.main {
+	  flex: 100%;
+	  background-color: white;
+	  padding: 20px;
+	}
+	/* Footer */
+	.footer {
+			 padding: 1px;
+			  text-align: center;
+			  background: black;
+			  color: white;
+	}
+	.line{
+		  border: 1px solid red;
+		  padding: 10px;
+		}
+	/* media query screen size=700px */
+	@media screen and (max-width: 700px) {
+	  .row, .main {   
+		flex-direction: column;
+	  }
+</style>
+</head>
+<body>
+<!-- Header -->
+	<div class = "header">
+		<h2> Name and logo</h2>
+	</div>
+<!-- Top -->
+	<div class = "main">
+		<h1><center>Tax Invoice</center></h1>
+		<h3>Step 1</h3>
+		<!--  first line -->	
+		<div class = "line">	
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>Invoice No</label>
+						<input type = "text" class = "form-control" id = "invoice" placeholder = "Invoice no">
+					</div>
+				</div>
+				<div class ="col-md-6">
+					<div class = "form-group">
+						<label>Invoice Date</label>
+						<input type = "text" class = "form-control" id = "date" placeholder = "">
+					</div>
+				</div>
+			</div>
+			<div class= "row">
+				<div class ="col-md-6">
+					<div class = "form-group">
+						<label>Name Of thee Party</label>
+						<input type = "text" class = "form-control" id = "name" placeholder = "name">
+					</div>
+				</div>
+					<div class = "col-md-6">
+						<div class = "form-group">
+							<label>GST No</label>
+							<input type = "text" class = "form-control" id = "gst" placeholder = "">
+						</div>
+					</div>
+			</div>
+			<div class = "row">
+				<div class ="col-md-6">
+					<div class = "form-group">
+						<label>vehicle No</label>
+						<input type = "text" class = "form-control" id = "vehicalno" placeholder = "">
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3> Step 2</h2>
+		<div class = "line">
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>sr.no</label>
+						<input type = "text" class = "form-control" id = "srno" placeholder = "">
+					</div>
+				</div>
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>Service Description</label>
+						<input type = "text" class = "form-control" id = "des" placeholder = "">
+					</div>
+				</div>
+			</div>	
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>HSN</label>
+						<input type = "text" class = "form-control" id = "hsn" placeholder = "">
+					</div>
+				</div>
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>SAC</label>
+						<input type = "text" class = "form-control" id = "sac" placeholder = "">
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>Quantity</label>
+						<input type = "text" class = "form-control" id = "quentity" placeholder = "">
+					</div>
+				</div>
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>Net Amount</label>
+						<input type = "text" class = "form-control" id = "amount" placeholder = "">
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3>Step 3</h3>
+		<div class = "line">
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>Net Total</label>
+						<input type = "text" class = "form-control" id = "total" placeholder = "">
+					</div>
+				</div>
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>CGST @ 9%</label>
+						<input type = "text" class = "form-control" id = "cgst" placeholder = "">
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>SGST @ 9%</label>
+						<input type = "text" class = "form-control" id = "sgst" placeholder = "">
+					</div>
+				</div>
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label>IGST @ 18%</label>
+						<input type = "text" class = "form-control" id = "igst" placeholder = "">
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "form-group">
+						<label> Grand Total</label>
+						<input type = "text" class = "form-control" id = "gt" placeholder = "">
+					</div>
+				</div>
+			</div>
+		</div><br>
+			<div class = "row">
+				<div class = "col-md-12">
+					<div class = "form-group" align = "center">
+						<button type = "submit" class = "btn btn-success">Submit</button>
+						<button type = "reset" class = "btn btn-default">Reset</button>
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+
+<!-- Footer -->
+	<div class="footer">
+	  <h2>Designed & Developed By: On Map Technologies</h2>
+	</div>
+
+</body>
+</html>
